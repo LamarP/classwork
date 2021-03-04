@@ -1,0 +1,9 @@
+ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: $sans-serif;
+}
+
+.nav-bar :last-child {
+  text-decoration-line: underline;
+}
