@@ -31,16 +31,17 @@
   > ul {
 
     > li {
-      padding: 0 2px ;
+      margin-left: 5px ;
     }
 
-    > li:last-of-type {
-  
+     > li:last-of-type {
+    
+      postion: relative;
     }
   }
   
   i {
-    margin-left: 10px;
+        margin-left: 10px;
     font-size: 25px;
   }
 }
