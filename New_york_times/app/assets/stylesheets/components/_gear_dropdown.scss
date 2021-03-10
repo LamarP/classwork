@@ -2,7 +2,7 @@
 #gear-dropdown-btn {
     
     position: relative;
-    padding: 0 10px;
+    padding: 7px 10px;
 }
 
 #gear-dropdown-btn:hover .gear-dropdown{
@@ -16,7 +16,7 @@
     display: none;
     background-color: white;
     padding: 10px;
-   
+    border: 1px solid $light-gray;
     width: 100px;
     z-index: 1;
     text-align: left;
@@ -27,11 +27,32 @@
 .dropdown-subtitle {
     margin: 10px 5px;
     text-transform: uppercase;
+    display: block;
 }
 
-.editions > li{
-   padding: 2px 0;
-   border-bottom: 1px solid light-gray;
+// .editions > li{
+//    padding: 2px 0;
+//    border-bottom: 1px solid light-gray;
+// }
+.editions li,
+.help li{
+  margin: 5px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.editions  {
+  border-bottom: 1px solid $light-gray;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  li:hover {
+    background-color: $light-gray;
+  }
 }
 
 .help > li {
