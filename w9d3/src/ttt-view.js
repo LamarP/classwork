@@ -16,11 +16,22 @@ class View {
 
   makeMove($square) {
     const pos = $square.data("pos");
-    this.game.playMove(pos);
+    // this.game.playMove(pos);
     const currentPlayer = this.game.currentPlayer;
+    try {
+      this.game.playMove(pos);
+      $square.addClass(currentPlayer);
+    } catch (e) {
+      alert('move was invalid!!!!')
+    }
+    let winner = this.game.winner();
+    if (winner) {
+      this.$el.addClass('winner-' + winner);
+      this.$el.off();
+      alert(`${winner} has won!!!!`)
+    }
 
-    $square.addClass(currentPlayer);
-
+    
   }
 
   setupBoard() {

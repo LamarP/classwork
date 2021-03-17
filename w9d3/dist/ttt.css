@@ -21,7 +21,7 @@ li:hover {
 }
 
 .x, .o {
-  background-color: white;
+  background-color: rgb(113, 100, 173);
 }
 
 .x:after {
@@ -29,7 +29,7 @@ li:hover {
   content: "x";
   font-size: 100px;
   justify-content: center;
-
+  color: rgb(236, 167, 63);
 }
 
 .o:after {
@@ -37,4 +37,9 @@ li:hover {
   content: "o";
   font-size: 100px;
   justify-content: center;
+  color: chartreuse;
+}
+
+.winner-x .x, .winner-o .o {
+  background-color: green;
 }
