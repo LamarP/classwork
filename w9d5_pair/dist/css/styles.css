@@ -51,3 +51,29 @@ h1 {
   opacity: 1;
   transform: translateX(0%) scale(1);
 }
+
+.dog-link{
+  display:none;
+}
+
+.drop-down-dog-list a{
+  color: #413C58;
+  font-size: 18px;
+  font-family: 'Blinker', sans-serif;
+  margin: 10px;
+}
+
+.drop-down-dog-list li{
+  margin: 10px;
+}
+
+#party{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#clock{
+margin: 20px;
+font-weight: bolder;
+background-color: white;
+}
