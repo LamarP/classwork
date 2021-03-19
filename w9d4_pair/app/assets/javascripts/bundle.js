@@ -1,69 +1,25 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./frontend/follow_toggle.js":
-/*!***********************************!*\
-  !*** ./frontend/follow_toggle.js ***!
-  \***********************************/
-/***/ ((module) => {
+/***/ "./frontend/twitter.js":
+/*!*****************************!*\
+  !*** ./frontend/twitter.js ***!
+  \*****************************/
+/***/ (() => {
 
-class FollowToggle {
-    constructor(el) {
-        this.$el = $(el);
-        this.userId = this.$el.data("user-id");
-        this.followState = this.$el.data("initial-follow-state");
-
-        
-    }
-}
-
-module.exports = FollowToggle;
+throw new Error("Module parse failed: Unexpected token (15:2)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n|         new UserSearch(search);\n|     })\n> })");
 
 /***/ })
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
 /******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./frontend/twitter.js"]();
 /******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
-/*!*****************************!*\
-  !*** ./frontend/twitter.js ***!
-  \*****************************/
-const FollowToggle = __webpack_require__(/*! ./follow_toggle */ "./frontend/follow_toggle.js");
-
-$(function() {
-    let $buttons = $("button.follow-toggle");
-    $buttons.each((index, button) => function() {
-        new FollowToggle(button);
-    })
-})
-})();
-
 /******/ })()
 ;
 //# sourceMappingURL=bundle.js.map
