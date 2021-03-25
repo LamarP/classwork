@@ -64,7 +64,7 @@ p {
 }
 
 .row {
-  width: 250px;
+  width: 550px;
   margin: 0 auto;
 }
 
@@ -75,26 +75,28 @@ p {
 }
 
 .tile{
-  height: 20px;
-  width: 20px;
-  background: lightgray;
+  height: 50px;
+  width: 50px;
+  background: rgb(211, 59, 135);
   float: left;
   border-style: outset;
   border-width: 2px;
-  line-height: 20px;
+  /* line-height: 20px; */
   padding-left: 3px;
-  font-size: 14px;
+  font-size: 38px;
   font-weight: bold;
   position: relative;
   text-align: center;
+  color: aliceblue;
 }
 
 .explored{
   border-style: inset;
+  background-color: rgb(98, 218, 62);
 }
 
 .flagged, .bombed{ 
-  color: red;
+  color: rgb(27, 197, 248);
 }
 
 .modal-screen{

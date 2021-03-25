@@ -4,16 +4,24 @@ import React from "react";
 class Tile extends React.Component {
   constructor(props) {
     super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    const flagged = e.altKey ? true : false;
+    this.props.updateGame(this.props.tile, flagged);
   }
 
   render() {
     const tile = this.props.tile;
     let text = "";
-
+    let klass = "";
     if (tile.explored){
-      if (tile.bombed){
-        text = "BOOM!";
+      if (tile.bombed) {
+        klass = "bombed"
+        text = "💥";
       } else {
+        klass = "explored";
         let num = tile.adjacentBombCount();
         if (num > 0){
           text = `${num}`;
@@ -21,12 +29,15 @@ class Tile extends React.Component {
           text = "";
         };
       }
-    } else if (tile.flagged){
-      text = "Flagged!";
+    } else if (tile.flagged) {
+      klass = "flagged";
+      text = "⚑";
     }
+    klass = `tile ${klass}`;
     return (
-      <div>
-        <a>{text}</a>
+      <div className={klass} onClick={this.handleClick}>
+        
+        {text}
       </div>
     )
   }
